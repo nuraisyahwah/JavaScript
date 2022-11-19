@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript </title>
+</head>
+
+<body>
+    <p id="nama"></p>
+    <p id="alamat">Jl.Sukabangun 2</p>
+    <p id="prodi">Informatika</p>
+    <!--inline js-->
+    <button onclick="alert('Selamat Pagi')">Tekan tombol ini</button>
+
+    <button onclick="salam()">Beri Salam</button>
+
+    <hr>
+    <p id="npm"></p>
+    <p id="umur"></p>
+    <p id="status"></p>
+    <p id="hobi"></p>
+
+    <p id="mahasiswa"></p>
+
+    <!--internal js-->
+    <script>
+        document.getElementById('nama').innerHTML = "Nur Aisyah ";
+        let alamat = document.getElementById('alamat');
+        alamat.innerHTML = "Jl Sukabangun 2";
+        document.getElementById('prodi')[0].innerHTML = "Informatika";
+    </script>
+
+    <!--external js-->
+    <script src="script.js"></script>
+</body>
+
+</html>
